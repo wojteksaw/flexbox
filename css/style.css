@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid green;
+    height: 35vh;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+.container2 {
+    display: flex;
+    border: 1px solid green;
+    height: 35vh;
+  }
+
+.container div, .container2 div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+.container2 div {
+    margin: 1px;
+}
+
+.container2 div:nth-of-type(2) {
+    order: -1;
+}
+.container2 div:nth-of-type(4) {
+    align-self: end;
+}
+.container2 div:nth-of-type(5) {
+    align-self: center;
+}
